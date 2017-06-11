@@ -9,7 +9,6 @@ class Solution(object):
         if len(strs) == 1:
             return strs[0]
         shortest_string_len = min(len(_str) for _str in strs)
-        longest_common_prefix = ""
         idx = 0
         while idx < shortest_string_len:
             char = strs[0][idx]

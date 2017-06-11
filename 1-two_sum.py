@@ -24,9 +24,3 @@ class Solution(object):
                 return [my_dict[num][0], my_dict[num][0]]
             if other_num in my_dict:
                 return [my_dict[num][0], my_dict[other_num][0]]
-
-nums = [0,4,3,0]
-target = 0
-s = Solution()
-res = s.twoSum(nums, target)
-print res

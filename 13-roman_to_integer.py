@@ -15,8 +15,8 @@ class Solution(object):
             'M': 1000,
         }
 
-        idx = len(s) -1
-        while idx >=0:
+        idx = len(s) - 1
+        while idx >= 0:
             char = s[idx]
             if idx == 0:
                 numeral += rom_to_num[char]

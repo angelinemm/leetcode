@@ -1,5 +1,7 @@
 MIN_INT = -2147483648
 MAX_INT = 2147483647
+
+
 class Solution(object):
 
     def reverse(self, x):
