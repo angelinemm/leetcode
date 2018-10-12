@@ -43,14 +43,6 @@ class Solution(object):
             curr = curr.next
             pos += 1
 
-        print('@')
-        print(pre_reversed)
-        print('tail pre rev: {}'.format(tail_pre_rev))
-        print(reversed)
-        print('tail rev: {}'.format(tail_rev))
-        print(post_reversed)
-        print('@')
-
         if tail_pre_rev:
             tail_pre_rev.next = reversed
         tail_rev.next = post_reversed
