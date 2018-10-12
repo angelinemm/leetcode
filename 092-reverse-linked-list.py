@@ -34,8 +34,8 @@ class Solution(object):
                 temp = reversed
                 reversed = ListNode(curr.val)
                 if pos == m:
-                    tail_pre_rev = prev # This is where we will link to the reversed section
-                    tail_rev = reversed # This is where we will link to the post-reversed section
+                    tail_pre_rev = prev  # This is where we will link to the reversed section
+                    tail_rev = reversed  # This is where we will link to the post-reversed section
                 reversed.next = temp
                 if pos == n:
                     post_reversed = curr.next
