@@ -18,19 +18,18 @@ class Solution(object):
             _format = self._to_ip_format(i)
             if sum(_format) != size:
                 continue
-            else:
-                ip_addr = []
-                start = end = 0
-                for x in range(0, 4):
-                    start = end
-                    end = start + _format[x]
-                    item = s[start:end]
-                    if int(item) > 255 or (item.startswith('0') and not item == '0'):
-                        ip_addr = []
-                        break
-                    ip_addr += [item]
-                if ip_addr:
-                    res += ['.'.join(ip_addr)]
+            ip_addr = []
+            start = end = 0
+            for x in range(0, 4):
+                start = end
+                end = start + _format[x]
+                item = s[start:end]
+                if int(item) > 255 or (item.startswith('0') and not item == '0'):
+                    ip_addr = []
+                    break
+                ip_addr += [item]
+            if ip_addr:
+                res += ['.'.join(ip_addr)]
         return list(set(res))
 
 
